@@ -12,7 +12,7 @@ LifecycleActivity废弃，可以直接在activity中使用。
 使用方法
 1；在mvp中，定义好presenter，p层应该有生命周期，使用Lifecycle后，则根据activity生命周期保持一致
 在FragmentActivity中，在oncreact中直接使用  getLifecycle().addObserver(presenter);
-在presenter 里面使用
+在presenter implements LifecycleObserver 里面使用
  @OnLifecycleEvent(Lifecycle.Event.ON_CREATE)
     void onCreate() {
         Log.i(TAG, "LoginPresenter onCreate:   ");
