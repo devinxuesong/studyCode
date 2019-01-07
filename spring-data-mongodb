@@ -1,0 +1,6 @@
+后台开发：mongoDB相关 spring-data-mongodb
+工具robo3T可直接连接数据库
+name：随便设置
+address：106.14.79.27 端口 27017
+database：不能为admin
+
