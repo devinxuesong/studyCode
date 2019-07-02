@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/welcome">
+    <fragment
+        android:id="@+id/welcome"
+        android:name="jietusdk.winmu.com.navigatorapplication.fragment.WelcomeFragment"
+        android:label="LoginFragment"
+        tools:layout="@layout/fragment_welcome">
+        <action android:id="@+id/action_welcome_to_login" />
+        <action
+            android:id="@+id/action_welcome_to_login3"
+            app:destination="@id/login" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/login"
+        android:name="jietusdk.winmu.com.navigatorapplication.fragment.LoginFragment"
+        android:label="LoginFragment"
+        tools:layout="@layout/fragment_login">
+        <action android:id="@+id/action_login" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/register"
+        android:name="jietusdk.winmu.com.navigatorapplication.fragment.RegisterFragment"
+        android:label="LoginFragment"
+        tools:layout="@layout/fragment_register">
+
+        <argument
+            android:name="EMAIL"
+            android:defaultValue="2005@qq.com"
+            app:argType="string" />
+    </fragment>
+
+</navigation>
+
