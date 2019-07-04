@@ -1,9 +1,10 @@
 package com.devin.mvp.Presenter;
 
-import android.arch.lifecycle.Lifecycle;
-import android.arch.lifecycle.LifecycleObserver;
-import android.arch.lifecycle.OnLifecycleEvent;
 import android.util.Log;
+
+import androidx.lifecycle.Lifecycle;
+import androidx.lifecycle.LifecycleObserver;
+import androidx.lifecycle.OnLifecycleEvent;
 
 import com.devin.mvp.Calback.LoginCallback;
 import com.devin.mvp.Calback.ViewListener;
